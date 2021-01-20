@@ -1,5 +1,6 @@
 class HelloWorld{
     public static void main(String[] args){
-        System.out.println("Goodbye Earth");
+        System.out.println("Hello World");
+        System.out.println("Another line of string");
     }
 }
