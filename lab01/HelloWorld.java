@@ -1,5 +1,6 @@
 class HelloWorld{
     public static void main(String[] args){
-        System.out.println("Goodbye Earth");
+        // I accidentally did the steps out of order last time
+        System.out.println("Making another change");
     }
 }
