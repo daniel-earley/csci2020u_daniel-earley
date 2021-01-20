@@ -1,6 +1,11 @@
 class HelloWorld{
     public static void main(String[] args){
-        System.out.println("Hello World");
-        System.out.println("Another line of string");
+<<<<<<< HEAD
+
+=======
+        // I accidentally did the steps out of order last time
+        System.out.println("Making another change");
+>>>>>>> b
+	>>>>>>>
     }
 }
