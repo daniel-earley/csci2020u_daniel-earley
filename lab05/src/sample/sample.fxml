@@ -8,21 +8,19 @@
         <Insets bottom = "10.0" left = "10.0" right = "10.0" top = "10.0" />
     </padding>
 
-<!--    <Label style="-fx-font: Normal 20 Calibri;" text = "Marks" GridPane.columnIndex="0" GridPane.rowIndex="0"></Label>-->
-
     <TableView fx:id="tableView" GridPane.columnIndex="0" GridPane.rowIndex="1">
         <columns>
-            <TableColumn text="SID" fx:id="SIDCol"></TableColumn>
+            <TableColumn text="Student ID" fx:id="SIDCol"></TableColumn>
 
-            <TableColumn text="assignments" fx:id="assignmentsCol"></TableColumn>
+            <TableColumn text="Assignments" fx:id="assignmentsCol"></TableColumn>
 
-            <TableColumn text="midterm" fx:id="midtermCol"></TableColumn>
+            <TableColumn text="Midterm" fx:id="midtermCol"></TableColumn>
 
-            <TableColumn text="finalExam" fx:id="finalExamCol"></TableColumn>
+            <TableColumn text="Final Exam" fx:id="finalExamCol"></TableColumn>
 
-            <TableColumn text="finalMark" fx:id="finalMarkCol"></TableColumn>
+            <TableColumn text="Final Mark" fx:id="finalMarkCol"></TableColumn>
 
-            <TableColumn text="letterGrade" fx:id="letterGradeCol"></TableColumn>
+            <TableColumn text="Letter Grade" fx:id="letterGradeCol"></TableColumn>
 
         </columns>
 
