@@ -60,14 +60,14 @@ public class Controller {
         gc.setFill(Color.BLACK);
 
         // Pie Graph Legend
-        double y = 100;
+        double y = 250;
         for (String word : keys){
             gc.fillText(word, 150, y);
             y += 20;
         }
 
         // Pie Graph Colours
-        y = 86;
+        y = 236;
         gc.setStroke(Color.BLACK);
         for (int i = 0; i < pieColours.length; i++){
             gc.setFill(pieColours[i]);
