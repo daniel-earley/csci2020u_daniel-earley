@@ -111,9 +111,18 @@ public class Controller {
     }
 
     public void handleSave(ActionEvent actionEvent) throws IOException {
-        fileName = "default.csv";
-        save();
-
+//        fileName = "default.csv";
+        if (fileName.equals("")) {
+            try {
+                FileChooser fc = new FileChooser();
+                fileName = fc.showSaveDialog(Main.getStage()).getName();
+                save();
+            } catch (IOException e){
+                e.printStackTrace();
+            }
+        } else {
+            save();
+        }
     }
 
     public void handleSaveAs(ActionEvent actionEvent) {
