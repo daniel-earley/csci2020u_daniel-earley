@@ -1,0 +1,78 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets bottom = "10.0" left = "10.0" right = "10.0" top = "10.0" />
+    </padding>
+
+    <TableView fx:id="tableView" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn text="Student ID" fx:id="SIDCol"></TableColumn>
+
+            <TableColumn text="Assignments" fx:id="assignmentsCol"></TableColumn>
+
+            <TableColumn text="Midterm" fx:id="midtermCol"></TableColumn>
+
+            <TableColumn text="Final Exam" fx:id="finalExamCol"></TableColumn>
+
+            <TableColumn text="Final Mark" fx:id="finalMarkCol"></TableColumn>
+
+            <TableColumn text="Letter Grade" fx:id="letterGradeCol"></TableColumn>
+
+        </columns>
+    </TableView>
+
+    <MenuBar fx:id="menu" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <menus>
+            <Menu text="File">
+                <items>
+                    <MenuItem fx:id="newFile" text="New" onAction="#handleNew" />
+                    <MenuItem fx:id="openFile" text="Open" onAction="#handleOpen" />
+                    <MenuItem fx:id="saveFile" text="Save" onAction="#handleSave" />
+                    <MenuItem fx:id="saveAsFile" text="SaveAs" onAction="#handleSaveAs" />
+                    <MenuItem fx:id="exitFile" text="Exit" onAction="#handleExit" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+
+    <!--Add fields-->
+    <GridPane alignment="TOP_LEFT" hgap="10" vgap="10" GridPane.columnIndex="0" GridPane.rowIndex="2">
+
+        <!-- Labels -->
+        <Label fx:id="SIDLabel" text="SID:" GridPane.columnIndex="0" GridPane.rowIndex="0"></Label>
+
+        <Label fx:id="midtermLabel" text="Midterm:" GridPane.columnIndex="0" GridPane.rowIndex="1"></Label>
+
+        <Label fx:id="asgmtLabel" text="Assignments:" GridPane.columnIndex="2" GridPane.rowIndex="0"></Label>
+
+        <Label fx:id="examLabel" text="Final Exam:" GridPane.columnIndex="2" GridPane.rowIndex="1"></Label>
+
+        <!-- Text Fields -->
+        <TextField fx:id="SIDField" promptText="SID" GridPane.columnIndex="1" GridPane.rowIndex="0"></TextField>
+
+        <TextField fx:id="midtermField" promptText="Midterm Grade" GridPane.columnIndex="1" GridPane.rowIndex="1"></TextField>
+
+        <TextField fx:id="asgmtField" promptText="Assignment Grade" GridPane.columnIndex="3" GridPane.rowIndex="0"></TextField>
+
+        <TextField fx:id="examField" promptText="Final Exam Grade" GridPane.columnIndex="3" GridPane.rowIndex="1"></TextField>
+
+        <!-- Buttons -->
+        <Button fx:id="addButton" text="Add" prefWidth="70" GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#handleAddButton"></Button>
+
+
+    </GridPane>
+
+
+</GridPane>
+
+
