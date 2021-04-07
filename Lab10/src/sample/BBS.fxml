@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane fx:controller="sample.BBSController"
+            xmlns:fx="http://javafx.com/fxml" >
+
+        <TextArea fx:id="messageArea" text="Bulletin Board:" BorderPane.alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Button text="Exit" BorderPane.alignment="BOTTOM_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+</GridPane>
